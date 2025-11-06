@@ -9,7 +9,7 @@ const client = new Client({
   ]
 })
 
-const token = process.env.BOT_TOKEN 'MTQzNTczNDkzNDM0MDc2NzgzNQ.GJWN2B.U5ehVVjeXfzLfON64pnsCROHXH0shgPLlSdJuA';
+const token = process.env.BOT_TOKEN ||'MTQzNTczNDkzNDM0MDc2NzgzNQ.GJWN2B.U5ehVVjeXfzLfON64pnsCROHXH0shgPLlSdJuA';
 
 client.once('ready', () => {
   console.log(`Connecté en tant que ${client.user.tag}`);
