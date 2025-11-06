@@ -1,46 +1,54 @@
-# Packages
-node_modules
+# ========================================
+# 🌀 Blue Lock Bot — .gitignore
+# Auteur : Gnande Kouakou Camille
+# Protège ton token, ton code et ton projet Discord.js
+# ========================================
 
-# Log files
-logs
+# 🧩 Node modules
+node_modules/
+
+# ⚙️ Fichiers d'environnement (token, clés, etc.)
+.env
+.env.local
+.env.production
+.env.development
+
+# 🪵 Logs
+logs/
 *.log
 npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 
-# Runtime data
-pids
-*.pid
-*.seed
-
-# Env
-.env
-
-# Dist
-dist
-dist-docs
-packages/discord-api-types
-
-# Miscellaneous
-.tmp
-.vscode/*
-!.vscode/extensions.json
-!.vscode/settings.json
-.idea
-.DS_Store
-.turbo
+# 🔐 Fichiers temporaires & cache
+tmp/
+temp/
+.cache/
+.eslintcache
+.prettiercache
+.turbo/
 tsconfig.tsbuildinfo
-coverage
-out
+
+# 🧠 Configs éditeur
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+.idea/
+.DS_Store
+
+# 🧪 Tests & couverture
+coverage/
+*.lcov
+
+# ⚙️ Builds & distributions
+dist/
+build/
+out/
 package.tgz
-tsup.config.bundled*
-vitest.config.ts.timestamp*
 
-# Deno
+# ⚡ Deno, Bun, Yarn
 deno.lock
-
-# Bun
 bun.lockb
-
-# yarn
 .pnp.*
 .yarn/*
 !.yarn/patches
@@ -49,7 +57,8 @@ bun.lockb
 !.yarn/sdks
 !.yarn/versions
 
-# Cache
-.prettiercache
-.eslintcache
-.vercel
+# 🧰 Fichiers de bundlers et doc auto
+tsup.config.bundled*
+vitest.config.ts.timestamp*
+dist-docs/
+packages/discord-api-types/
