@@ -7,9 +7,9 @@ const client = new Client({
     GatewayIntentBits.GuildMessages,
     GatewayIntentBits.MessageContent
   ]
-});
+})
 
-const token = process.env.BOT_TOKEN || 'MTQzNTczNDkzNDM0MDc2NzgzNQ.GEKjj_.Ag9J-3dWfYPXUP9IndLrcbNS17jIr4Fp7Npx-Y';
+const token = process.env.BOT_TOKEN 'MTQzNTczNDkzNDM0MDc2NzgzNQ.GJWN2B.U5ehVVjeXfzLfON64pnsCROHXH0shgPLlSdJuA';
 
 client.once('ready', () => {
   console.log(`Connecté en tant que ${client.user.tag}`);
